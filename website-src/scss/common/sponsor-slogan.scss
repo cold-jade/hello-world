@@ -1,0 +1,13 @@
+@import "mixins";
+.sponsor-slogan {
+	@include clearfix();
+	text-align: center;
+	img {
+		max-height: 100px;
+		width: 100px;
+		padding: 1px;
+	}
+	.title-sponsor {
+		width: 200px;
+	}
+}

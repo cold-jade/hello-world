@@ -1,0 +1,54 @@
+{
+	"footer": {
+		"contacts": ["fewf", "fwef"],
+		"email": "3lfjoewj@jofej.com",
+		"links": [{
+			"text": "合肥工业大学",
+			"href": "#"
+		}, {
+			"text": "合肥工业大学",
+			"href": "#"
+		}, {
+			"text": "合肥工业大学",
+			"href": "#"
+		}]
+	},
+	"title": "合肥工业大学.越影车队",
+	"user": {
+		"name": "damon.cf",
+		"avatar": "assets/img/avatar-1.png"
+	},
+	"cars": [{
+		"name": "越影1代",
+		"year": "2009",
+		"engine": "CBR600 599cc",
+		"gearbox": "序列式5速变速箱",
+		"transmission": "链传动",
+		"href": "#",
+		"src": "assets/img/sw-1.jpg"
+	}, {
+		"name": "越影2代",
+		"year": "2010",
+		"engine": "CBR600 599cc",
+		"gearbox": "序列式5速变速箱",
+		"transmission": "链传动",
+		"href": "#",
+		"src": "assets/img/sw-2.jpg"
+	}, {
+		"name": "越影3代",
+		"year": "2009",
+		"engine": "CBR600 599cc",
+		"gearbox": "序列式5速变速箱",
+		"transmission": "链传动",
+		"href": "#",
+		"src": "assets/img/sw-3.jpg"
+	}, {
+		"name": "越影4代",
+		"year": "2009",
+		"engine": "CBR600 599cc",
+		"gearbox": "序列式5速变速箱",
+		"transmission": "链传动",
+		"href": "#",
+		"src": "assets/img/sw-4.jpg"
+	}]
+}

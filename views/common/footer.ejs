@@ -1,0 +1,88 @@
+<div class="footer bg-inverse">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<ul>
+					<li>
+						<a href="#">
+							<span>地址</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<span>中国·安徽省合肥是屯溪路193号</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<span>合肥工业大学·格物楼·江淮汽车越影车队实验室</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<ul>
+					<li>
+						<a href="#">
+							<span>联系我们</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<span><%= contacts[0] %></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<span><%= contacts[1] %></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<span><%= email %></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<div class="row qrcode-container">
+					<div class="col-sm-6">
+						<img src="assets/img/yy-wechat.png" width="150" height="150" alt="">
+						<p>Wechat</p>
+					</div>
+					<div class="col-sm-6">
+						<img src="assets/img/yy-qq.png" width="150" height="150" alt="">
+						<p>QQ</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<ul>
+					<li>
+						<a href="#">
+							<span>友情链接</span>
+						</a>
+					</li>
+					<li>
+					<% links.forEach(function(item, idx) { %>
+						<a href="<%= item.href %>">
+							<span><%= item.text %></span>
+						</a>
+					<% }); %>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p class="copy-right">
+			Copyright©2017-2018 合肥工业大学江淮汽车越影FSAE车队版权所有 技术支持：
+			<a href="#">行云科技</a>
+		</p>
+	</div>
+</div>

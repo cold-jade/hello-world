@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- libs.css -->
+	<link rel="stylesheet" href="lib/tether/dist/css/tether.css">
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="lib/swiper/dist/css/swiper.css">
+	<!-- yours.css -->
+	<link rel="stylesheet" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+	<!-- header -->
+	<%- include('common/header.ejs', { activeIndex: 0 }) %>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<% swiper.forEach(function(item, idx) { %>
+			<a href="<%= item.href %>" class="swiper-slide">
+				<div class="img" style="background-image: url(<%= item.src %>)"></div>
+			</a>
+			<% }); %>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<div class="slogan" style="background-image: url(<%= slogan.src %>)">
+		<span><%= slogan.text %></span>
+	</div>
+
+	<div class="waterfall-container">
+
+	</div>
+
+	<!-- footer -->
+	<%- include('common/footer.ejs', footer) %>
+
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="lib/tether/dist/js/tether.js"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="lib/swiper/dist/js/swiper.jquery.js"></script>
+	<script src="assets/js/waterfall.js"></script>
+	<script>
+		$(function() {
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				autoplay: 2500,
+				autoplayDisableOnInteraction: true,
+				effect: 'slide',
+			});
+		});
+	</script>
+</body>
+</html>

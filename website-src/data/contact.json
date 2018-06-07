@@ -1,0 +1,52 @@
+{
+	"footer": {
+		"contacts": ["fewf", "fwef"],
+		"email": "3lfjoewj@jofej.com",
+		"links": [{
+			"text": "合肥工业大学",
+			"href": "#"
+		}, {
+			"text": "合肥工业大学",
+			"href": "#"
+		}, {
+			"text": "合肥工业大学",
+			"href": "#"
+		}]
+	},
+	"title": "合肥工业大学.越影车队.联系我们",
+	"address": "安徽省合肥市屯溪路193号",
+	"email": "yy@163.com",
+	"captain": {
+		"name": "name",
+		"phone": "1234324234",
+		"avatar": "assets/img/loading.gif"
+	},
+	"manager": {
+		"name": "name",
+		"phone": "3243423423",
+		"avatar": "assets/img/loading.gif"
+	},
+	"titleSponsor": [{
+		"name": "jac",
+		"img": "assets/img/loading.gif",
+		"url": ""
+	}],
+	"tecSponsor": [{
+		"name": "tec",
+		"img": "assets/img/loading.gif",
+		"url": ""
+	}, {
+		"name": "tec",
+		"img": "assets/img/loading.gif",
+		"url": ""
+	}],
+	"itemSponsor": [{
+		"name": "item",
+		"img": "assets/img/loading.gif",
+		"url": ""
+	}, {
+		"name": "item",
+		"img": "assets/img/loading.gif",
+		"url": ""
+	}]
+}

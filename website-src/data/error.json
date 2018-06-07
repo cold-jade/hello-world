@@ -1,0 +1,7 @@
+{
+	"message": "error.json",
+	"error": {
+		"status": "status code 404",
+		"stack": "stack for nothing"
+	}
+}

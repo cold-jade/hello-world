@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- libs.css -->
+	<link rel="stylesheet" href="lib/tether/dist/css/tether.css">
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+	<!-- yours.css -->
+	<link rel="stylesheet" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/news.css">
+</head>
+<body>
+	<!-- header -->
+	<%- include('common/header.ejs', { activeIndex: 1 }) %>
+
+	<div class="container">
+		<%- include('common/breadcrumb.ejs', breadcrumb) %>
+
+		<ul class="list-unstyled">
+			<% post.forEach(function(item) { %>
+			<li class="media">
+				<img src="assets/img/loading.gif" alt="loading" class="d-flex mr-3">
+				<div class="media-body">
+					<a href="">
+						<h5 class="media-title mt-0 mb-1">
+							<%- item.title %>
+							<span class="media-meta float-right small"><%- item.meta %></span>
+						</h5>
+						<p class="media-desc"><%- item.desc %></p>
+					</a>
+				</div>
+			</li>
+			<% }); %>
+		</ul>
+		<nav>
+			<ul class="pagination justify-content-center">
+				<li class="page-item">
+					<a href="#" class="page-link">&laquo;</a>
+				</li>
+				<li class="page-item disabled">
+					<a href="" class="page-link active">1</a>
+				</li>
+				<li class="page-item">
+					<a href="" class="page-link">2</a>
+				</li>
+				<li class="page-item">
+					<a href="" class="page-link">3</a>
+				</li>
+				<li class="page-item">
+					<a href="" class="page-link">&raquo;</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- footer -->
+	<%- include('common/footer.ejs', footer) %>
+
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="lib/tether/dist/js/tether.js"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

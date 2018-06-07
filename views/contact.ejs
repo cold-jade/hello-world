@@ -1,0 +1,135 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- libs.min.css -->
+	<link rel="stylesheet" href="lib/tether/dist/css/tether.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+	<!-- yours.min.css -->
+	<link rel="stylesheet" href="assets/css/common.min.css">
+	<link rel="stylesheet" href="assets/css/contact.min.css">
+</head>
+<body>
+	<!-- header -->
+	<%- include('common/header.ejs', { activeIndex: 4 }) %>
+
+	<div class="container">
+		<div class="contact">
+			<div class="info">
+				<p>合肥工业大学越影FSAE车队</p>
+				<p>地址：<span><%= address %></span></p>
+				<p>邮箱：<span><%= email %></span></p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-3">
+					<div class="card mb-3">
+						<div class="card-block">
+							<img src="<%= captain.avatar %>" alt="" class="card-img-top">
+							<br>
+							<p class="card-text">队长：
+								<span><%= captain.name %></span>
+							</p>
+							<p class="card-text">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<span><%= captain.phone %></span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card mb-3">
+						<div class="card-block">
+							<img src="<%= manager.avatar %>" alt="" class="card-img-top">
+							<br>
+							<p class="card-text">经理：
+								<span><%= manager.name %></span>
+							</p>
+							<p class="card-text">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<span><%= manager.phone %></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sponsor">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<a class="title-sponsor">
+						<i class="fa fa-diamond" aria-hidden="true"></i>
+						<p>冠名赞助</p>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a class="tec-sponsor">
+						<i class="fa fa-wrench" aria-hidden="true"></i>
+						<p>技术赞助</p>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a class="item-sponsor">
+						<i class="fa fa-gift" aria-hidden="true"></i>
+						<p>物质赞助</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="title-sponsor-detail sponsor-detail">
+		<div class="container">
+			<h4>冠名赞助</h4>
+			<p>车队只有一个冠名赞助商，赞助金额不低于200,000人名币，目前为<a href="">江淮汽车有限公司</a></p>
+			<div class="sponsor-brand">
+				<% titleSponsor.forEach(function(item, idx) { %>
+				<a href="<%= item.url %>">
+					<img src="<%= item.img %>" alt="<%= item.name %>">
+				</a>
+				<% }) %>
+			</div>
+		</div>
+	</div>
+
+	<div class="tec-sponsor-detail sponsor-detail">
+		<div class="container">
+			<h4>技术赞助</h4>
+			<p>技术赞助商（帮助车队加工零部件、视频网站制作等）</p>
+			<div class="sponsor-brand">
+				<% tecSponsor.forEach(function(item, idx) { %>
+				<a href="<%= item.url %>">
+					<img src="<%= item.img %>" alt="<%= item.name %>">
+				</a>
+				<% }) %>
+			</div>
+		</div>
+	</div>
+
+	<div class="item-sponsor-detail sponsor-detail">
+		<div class="container">
+			<h4>物质赞助</h4>
+			<p>实物场地赞助（车队队服、练车场地等等任何形式）</p>
+			<div class="sponsor-brand">
+				<% itemSponsor.forEach(function(item, idx) { %>
+				<a href="<%= item.url %>">
+					<img src="<%= item.img %>" alt="<%= item.name %>">
+				</a>
+				<% }) %>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<%- include('common/footer.ejs', footer) %>
+
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<script src="lib/tether/dist/js/tether.min.js"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

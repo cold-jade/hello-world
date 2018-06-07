@@ -1,0 +1,19 @@
+.swiper-slide {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	position: relative;
+}
+
+.swiper-slide:nth-child(1) {
+
+	.text-box{
+		text-align: center;
+		margin-top: 30%;
+		font-size: 2rem;
+		.time {
+			color: #999;
+		}
+	}
+}

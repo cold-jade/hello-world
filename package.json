@@ -1,0 +1,38 @@
+{
+  "name": "yueying-web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start-dev": "node ./bin/www development",
+    "start-pro": "node ./bin/www production"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "http-proxy": "^1.16.2",
+    "log4js": "^2.3.3",
+    "morgan": "~1.7.0",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.8.4",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-data": "^1.2.1",
+    "gulp-ejs": "^3.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}

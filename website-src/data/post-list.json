@@ -1,0 +1,46 @@
+{
+	"title": "公告列表",
+	"footer": {
+		"contacts": ["fewf", "fwef"],
+		"email": "3lfjoewj@jofej.com",
+		"links": [{
+			"text": "合肥工业大学",
+			"href": "#"
+		}, {
+			"text": "合肥工业大学",
+			"href": "#"
+		}, {
+			"text": "合肥工业大学",
+			"href": "#"
+		}]
+	},
+	"breadcrumb": [{
+		"text": "通知公告",
+		"url": "#1"
+	}, {
+		"text": "通知公告2",
+		"url": "#2"
+	}, {
+		"text": "通知公告3",
+		"url": "#3"
+	}, {
+		"text": "通知公告4",
+		"url": "#4"
+	}],
+	"post": [{
+		"title": "标题",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloremque voluptatem minima magni? Libero aut quasi eaque perspiciatis quae vitae quibusdam ullam dicta a nemo! Est quod distinctio, aliquam sunt.",
+		"meta": "2017-07-22 Damon.cf",
+		"img": "assets/img/loading.gif"
+	}, {
+		"title": "标题",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloremque voluptatem minima magni? Libero aut quasi eaque perspiciatis quae vitae quibusdam ullam dicta a nemo! Est quod distinctio, aliquam sunt.",
+		"meta": "2017-07-22 Damon.cf",
+		"img": "assets/img/loading.gif"
+	}, {
+		"title": "标题",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloremque voluptatem minima magni? Libero aut quasi eaque perspiciatis quae vitae quibusdam ullam dicta a nemo! Est quod distinctio, aliquam sunt.",
+		"meta": "2017-07-22 Damon.cf",
+		"img": "assets/img/loading.gif"
+	}]
+}

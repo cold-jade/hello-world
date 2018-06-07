@@ -1,0 +1,25 @@
+.footer {
+	padding: 30px 0;
+	color: #999;
+
+	ul>li {
+		list-style-type: none;
+	}
+	ul>li:first-child {
+		padding: 10px 0;
+		a {
+			font-size: 16px;
+		}
+	}
+	a {
+		color: #999;
+		font-size: 14px;
+	}
+	.qrcode-container {
+		text-align: center;
+	}
+	.copy-right {
+		text-align: center;
+		font-size: 12px;
+	}
+}

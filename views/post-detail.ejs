@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- libs.min.css -->
+	<link rel="stylesheet" href="lib/tether/dist/css/tether.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+	<!-- yours.min.css -->
+	<link rel="stylesheet" href="assets/css/common.min.css">
+	<link rel="stylesheet" href="assets/css/post-detail.min.css">
+</head>
+<body>
+	<!-- header -->
+	<%- include('common/header.ejs', { activeIndex: 0 }) %>
+
+	<div class="container">
+
+		<%- include('common/breadcrumb.ejs', breadcrumb) %>
+
+		<div class="post-img" style="background-image: url(<%= post.img %>)"></div>
+		<div class="post-header">
+			<h4 class="post-title">
+				<%= post.title %>
+			</h4>
+			<p class="post-meta">
+				<%= post.meta %>
+			</p>
+		</div>
+		<div class="post-content">
+			<%= post.content %>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<%- include('common/footer.ejs', footer) %>
+
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<script src="lib/tether/dist/js/tether.min.js"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
